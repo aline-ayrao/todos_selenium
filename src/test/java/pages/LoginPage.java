@@ -12,6 +12,7 @@ public class LoginPage {
     String CEP = "//*[@id='CEP']";
     String TELEFONE = "//*[@id='Telefone']";
     String CPF = "//*[@id='CPF']";
+    String CHECK = "//*[@id='Termos']";
     String INICIAR = "//*[@id='root']/div/div/div[1]/form/div[2]/div/button/span";
 
 
@@ -37,6 +38,9 @@ public class LoginPage {
 
     public void preencherCPF (String cpf){
         driver.findElement(By.xpath(CPF)).sendKeys(cpf);
+    }
+    public void marcarCheck (){
+        driver.findElement(By.xpath(CHECK)).click();
     }
 
     public void clicarIniciar (){

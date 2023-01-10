@@ -41,10 +41,11 @@ public class LoginStep {
         loginPage.preencherCEP(cep);
         loginPage.preencherTelefone(telefone);
         loginPage.preencherCPF(cpf);
+        loginPage.marcarCheck();
     }
 
     @Quando("clicar iniciar")
-    public void clicarEmFazerLogin() {
+    public void clicarIniciar() {
         loginPage.clicarIniciar();
     }
 
